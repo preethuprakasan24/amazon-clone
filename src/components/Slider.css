@@ -1,0 +1,23 @@
+.carousel-item {
+    position: relative;
+  }
+  
+  .carousel-card-container {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100%; /* Ensure the container spans the full width */
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Adjust the gap between cards */
+  }
+  
+  .carousel-card-container .card {
+    width: 18rem; /* Match the width of the CardItem */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Semi-transparent background */
+    padding: 10px;
+    border-radius: 8px;
+  }
+  

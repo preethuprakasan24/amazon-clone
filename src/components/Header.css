@@ -1,0 +1,201 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 60px;
+    line-height: 12px;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    position: fixed;
+}
+.navbar{
+    background-color: #131921;
+    color: white;
+    height: 60px;
+    display: flex;
+    flex: 1;
+}
+.leftSection{
+    display: flex;
+    height: 60px;
+    text-size-adjust: 100%;
+    /* width: 281px; */
+}
+
+.logoContainer{
+display: flex;
+height: 60px;
+margin-left: 11px;
+padding: 4px 0 0 0;
+/* width: 129px; */
+}
+
+.logoBox{
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    height: 50px;
+    margin: 1px 8px 6px 0;
+    border: solid transparent 1px;
+    /* width: 129px; */
+    align-items: center;
+}
+
+.headerLogo{
+    width: 97px;
+    object-fit: contain;
+    margin-top: 12px;
+}
+
+.logoText{
+    color: white;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    height: 14px;
+    line-height: 14px;
+    /* width: 15px; */
+}
+
+.locationContainer{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    /* width: 137px; */
+    height: 50px;
+    margin: 5px 0px 0px 5px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+    border: solid transparent 1px;
+}
+
+.locationIcon{
+    background-image: url(https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-2x-reorg-privacy._CB600086755_.png);
+    background-position-x: -71px;
+    background-position-y: -378px;
+    height: 18px;
+    display: flex;
+    margin-top: 8px;
+    margin-right: 4px;
+    background-size: 350px;
+}
+
+.userInfoBox{
+    display: flex;
+    justify-content: center;
+    display: block;
+}
+
+.deliverTo{
+    color: rgb(204,204,204);
+    display: flex;
+    font-size: 12px;
+    font-weight: 400px;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 0px;
+    padding-right: 0px;
+    text-wrap: nowrap;
+}
+.deliveryLocation{
+    color: white;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: 16px;
+    line-height: 10px;
+    padding-bottom: 1px;
+    padding-right: 8px;
+    margin-top: 1px;
+    text-wrap: nowrap;
+}
+.searchBar{
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 60px;
+    padding: 10px 4px 10px 3px;
+    margin: 0 10px;
+}
+
+.dropdown-toggle{
+font-size: 12px;
+background-color: rgb(165, 165, 168);
+border: rgb(237, 237, 240);
+}
+
+.dropdown-item{
+    font-size: 14px;
+    line-height: 20px;
+}
+.flagIcon{
+    align-items: center;
+    width: 20px;
+    height: 15px;
+    display: flex;
+    margin: 10px 2px 1px 0;
+    background-color: black;
+}
+.dropdown-toggle {
+    background-color: transparent;
+    color: white;
+}
+.cartIcon{
+    align-items: center;
+    width: 40px;
+    height: 45px;
+    display: flex;
+    margin: 10px 2px 1px 0;
+    color: aquamarine;
+}
+
+
+@media(max-width:600px){
+    .locationContainer{
+        display: none;
+    }
+    .thirdCol{
+        display: none;
+    }
+    .thirdCol span{
+        font-size: 5px;
+    }
+    .headerLogo {
+        width: 27px;
+    }
+    .logoText{
+        font-size: 8px;
+    }
+  
+    .deliverTo{
+        font-size: 6px;
+    }
+    .deliveryLocation{
+        font-size: 6px;  
+    }
+    .items{
+        font-size: 10px;
+    }
+    
+}
+
+.modal.left .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal.left.show .modal-dialog {
+    transform: translateX(0);
+  }
